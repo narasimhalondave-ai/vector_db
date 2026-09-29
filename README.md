@@ -1,2 +1,4 @@
-# vector_db
-A vector database stores embeddings, numeric representations of text, images, or audio produced by AI models. It finds semantically similar items using distance metrics like cosine similarity and fast approximate nearest neighbor search. It powers semantic search, recommendations, and RAG for LLMs.
+# Vector DB
+A vector database is a specialized data store built to hold and search high-dimensional numerical representations called embeddings, which AI and machine learning models produce to capture the meaning of text, images, audio, or other data. 
+Instead of matching exact keywords like a traditional database, a vector database finds items that are semantically similar by measuring the distance between vectors, using metrics such as cosine similarity or Euclidean distance. 
+To make this fast at scale, it relies on approximate nearest neighbor (ANN) algorithms like HNSW, IVF, or product quantization, which trade a small amount of accuracy for large gains in speed across millions or billions of vectors. This capability is central to modern AI applications: it powers semantic search, recommendation systems, image and audio retrieval, anomaly detection, and especially retrieval-augmented generation (RAG), where a language model pulls relevant context from a vector store to give more accurate, grounded answers.
